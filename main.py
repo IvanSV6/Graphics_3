@@ -196,7 +196,6 @@ class DrawTrapezoid:
 
     def create_trapezoid(self):
         tops = self.calculate_top()
-        print(tops)
         self.canvas_python.delete("all")
         self.canvas_cda.delete("all")
         self.canvas_brezf.delete("all")
