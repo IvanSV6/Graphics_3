@@ -200,12 +200,13 @@ class DrawTrapezoid:
         self.canvas_cda.delete("all")
         self.canvas_brezf.delete("all")
         self.canvas_brezi.delete("all")
+        self.pbm_set.clear()
         for i in range(-1, len(tops) - 1):
             self.cda(tops[i], tops[i + 1])
             self.brezf(tops[i], tops[i + 1])
             self.brezi(tops[i], tops[i + 1])
             self.python_line(tops[i], tops[i + 1])
-        self.pbm_set.clear()
+        
     def save(self):
         if len(self.pbm_set) == 0:
             print("Нет данных для сохранения!")
